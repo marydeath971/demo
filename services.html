@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Lina Writers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .section-heading {
+            font-size: 36px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .service-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item img {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .transition-btn {
+            background-color: #ff7200;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .transition-btn:hover {
+            background-color: white;
+            color: #ff7200;
+            border: 2px solid #ff7200;
+        }
+
+        .university-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .university-images img {
+            width: 150px;
+            height: auto;
+        }
+
+        .dropdown {
+            margin: 20px 0;
+        }
+
+        .dropdown button {
+            background-color: #ff7200;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        .dropdown-content {
+            display: none;
+            background-color: #f9f9f9;
+            min-width: 100%;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover button {
+            background-color: #ff4c4c;
+        }
+
+        /* Adjusting for mobile */
+        @media (max-width: 768px) {
+            .service-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Adjusting Body height to fit all content */
+        .main {
+            padding-top: 20px; /* Adjusted to create space for the advertisement */
+            padding-bottom: 10px; /* Ensures there is enough space between the content and footer */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: auto; /* Adjusted for better fitting */
+            background-color: #ff4c4c;
+        }
+
+        .content {
+            max-width: 800px;
+            width: 100%;
+            background-color: #fff;
+            color: #333;
+            padding: 10px;
+            margin: auto;
+            text-align: left;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Original Header (Navigation) -->
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">LW</h2>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="pricing.html">PRICE</a></li>
+                <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Services Section (Dropdowns) -->
+    <div class="main">
+        <div class="content">
+            <h2 class="section-heading">Our Services</h2>
+
+            <!-- Coursework Dropdown -->
+            <div class="dropdown">
+                <button>Coursework</button>
+                <div class="dropdown-content">
+                    <a href="#">Homework</a>
+                    <a href="#">Statistics</a>
+                    <a href="#">Physics</a>
+                    <a href="#">Engineering</a>
+                    <a href="#">Biology</a>
+                    <a href="#">Chemistry</a>
+                    <a href="#">Math</a>
+                    <a href="#">Geography</a>
+                    <a href="#">Other</a>
+                </div>
+            </div>
+
+            <!-- Paperwork Dropdown -->
+            <div class="dropdown">
+                <button>Paperwork</button>
+                <div class="dropdown-content">
+                    <a href="#">Essay</a>
+                    <a href="#">Case study</a>
+                    <a href="#">Report</a>
+                    <a href="#">Research paper</a>
+                    <a href="#">Presentation or speech</a>
+                    <a href="#">Annotated bibliography</a>
+                    <a href="#">Article review</a>
+                    <a href="#">Admission essay</a>
+                    <a href="#">Creative writing</a>
+                    <a href="#">Critical thinking / review</a>
+                    <a href="#">Literature review</a>
+                    <a href="#">Business plan</a>
+                    <a href="#">Research proposal</a>
+                    <a href="#">Book / movie review</a>
+                    <a href="#">Editing and proofreading</a>
+                    <a href="#">Reflective writing</a>
+                    <a href="#">Thesis/dissertation</a>
+                    <a href="#">Book review</a>
+                    <a href="#">Term paper</a>
+                    <a href="#">Other</a>
+                </div>
+            </div>
+
+            <!-- Online Class Assistance Dropdown -->
+            <div class="dropdown">
+                <button>Online Class Assistance</button>
+                <div class="dropdown-content">
+                    <a href="#">Completing entire online courses</a>
+                    <a href="#">Taking online quizzes and tests</a>
+                    <a href="#">Writing discussion posts and responses</a>
+                </div>
+            </div>
+
+            <!-- Subjects Dropdown -->
+            <div class="dropdown">
+                <button>Subjects</button>
+                <div class="dropdown-content">
+                    <a href="#">Business & Management</a>
+                    <a href="#">Business Administration</a>
+                    <a href="#">Marketing</a>
+                    <a href="#">Finance & Accounting</a>
+                    <a href="#">Human Resource</a>
+                    <a href="#">Social Sciences & Humanities</a>
+                    <a href="#">Sociology</a>
+                    <a href="#">Psychology</a>
+                    <a href="#">Political Science</a>
+                    <a href="#">History</a>
+                    <a href="#">Philosophy</a>
+                    <a href="#">Cultural Studies</a>
+                    <a href="#">Ethics</a>
+                    <a href="#">English & Literature</a>
+                    <a href="#">English Composition</a>
+                    <a href="#">Literature Analysis</a>
+                    <a href="#">Creative Writing</a>
+                    <a href="#">Linguistics</a>
+                    <a href="#">STEM (Science, Technology, Engineering, Math)</a>
+                    <a href="#">Mathematics (Algebra, Calculus, Statistics)</a>
+                    <a href="#">Physics</a>
+                    <a href="#">Chemistry</a>
+                    <a href="#">Biology</a>
+                    <a href="#">Computer Science & Programming</a>
+                    <a href="#">Engineering (Civil, Mechanical, Electrical)</a>
+                    <a href="#">Data Science & Analytics</a>
+                    <a href="#">Healthcare & Nursing</a>
+                    <a href="#">Nursing Theories & Concepts</a>
+                    <a href="#">Pharmacology</a>
+                    <a href="#">Anatomy & Physiology</a>
+                    <a href="#">Healthcare Management</a>
+                    <a href="#">Public Health</a>
+                    <a href="#">Medical Research</a>
+                    <a href="#">Law & Criminal Justice</a>
+                    <a href="#">Criminal Law</a>
+                    <a href="#">International Law</a>
+                    <a href="#">Criminology</a>
+                    <a href="#">Forensic Science</a>
+                    <a href="#">Education & Teaching</a>
+                    <a href="#">Educational Psychology</a>
+                    <a href="#">Curriculum Development</a>
+                    <a href="#">Special Education</a>
+                    <a href="#">Other Specialized Fields</a>
+                    <a href="#">Environmental Science</a>
+                    <a href="#">Media & Communication</a>
+                    <a href="#">Economics</a>
+                    <a href="#">Political Science</a>
+                </div>
+            </div>
+
+            <!-- Services List Section -->
+            <div class="service-list">
+                <div class="service-item">
+                    <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/07/p-and-p.png" alt="Pen and Paper">
+                    <h3>Pen & Paper</h3>
+                    <p>Essays, Case Studies, Research Papers, Thesis, and more. We guarantee high-quality, original content that is free from plagiarism.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/07/online-class.jpg" alt="Online Classes">
+                    <h3>Online Courses</h3>
+                    <p>Full assistance with completing online courses, quizzes, assignments, and discussions. We provide timely and reliable support.</p>
+                </div>
+                <div class="service-item">
+                    <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/07/exam-time.jpg" alt="Exam Time Tutoring">
+                    <h3>Exam Time Tutoring</h3>
+                    <p>Pre-exam tutoring and customized revision for your exams. We ensure you’re fully prepared with subject-focused strategies.</p>
+                </div>
+            </div>
+
+            <!-- Section Heading: Service Details -->
+            <h2 class="section-heading">Determine The Services You Need</h2>
+
+            <!-- Service Details Section -->
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Essay In-Depth Writing</h3>
+                    <p>Essay and assignment writing by our expert team, with more than 300 writers from various majors. We guarantee originality, logical flow, and adherence to academic standards.</p>
+                    <p><strong>We ensure all manuscripts pass 12 quality checks, including manual secondary reviews. Refund support is available if needed.</strong></p>
+                </div>
+                <div class="service-item">
+                    <h3>Online Course Replacement</h3>
+                    <p>We offer full online course completion assistance, from writing assignments to taking quizzes and discussions. We provide regular feedback and support to ensure your academic success.</p>
+                    <p><strong>Timely progress updates and 1v1 customer service help you stay on track, with payment plans aligned with academic performance.</strong></p>
+                </div>
+                <div class="service-item">
+                    <h3>Exam Time-Limited Tutoring</h3>
+                    <p>We offer customized exam revision sessions, ensuring effective preparation for a wide range of subjects.</p>
+                    <p><strong>Our tutors focus on answering techniques, so you can approach your exams with confidence, knowing that we’ve got your back.</strong></p>
+                </div>
+            </div>
+
+            <!-- Section Heading: Universities We Serve -->
+            <h2 class="section-heading">Universities We Serve</h2>
+
+            <!-- Served Universities -->
+            <div class="university-images">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/nanyang-technological-university.jpg" alt="Nanyang Technological University">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/chulalongkorn-university.png" alt="Chulalongkorn University">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/universitas-indonesia.jpg" alt="Universitas Indonesia">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/university-of-malaya.jpg" alt="University of Malaya">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/singapore-management-university.jpg" alt="Singapore Management University">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/ateneo-de-manila-university.jpg" alt="Ateneo de Manila University">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/yonsei-university.png" alt="Yonsei University">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/university-of-oxford.png" alt="University of Oxford">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/university-of-cambridge.png" alt="University of Cambridge">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/harvard-university.png" alt="Harvard University">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/stanford-university.png" alt="Stanford University">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/massachusetts-institute-of-technology.png" alt="MIT">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/mcgill-university.png" alt="McGill University">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/london-school-of-economics-and-political-science.jpg" alt="London School of Economics">
+                <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/06/national-university-of-singapore.png" alt="National University of Singapore">
+            </div>
+
+            <!-- Final Section and Transition Button -->
+            <h2 class="section-heading">Why Choose Us?</h2>
+            <p>At Lina Writers, we are dedicated to providing reliable, original, and high-quality academic writing services. We ensure that each order meets your specific requirements and that you receive top-notch support from start to finish. Our team of experienced writers is ready to help you achieve your academic goals, no matter the challenge.</p>
+            <button class="transition-btn"><a href="pricing.html">Check Out Our Prices and Offers</a></button>
+        </div>
+    </div>
+
+    <!-- Original Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>LINA WRITERS © 2025</p>
+            </div>
+
+            <div class="footer-center">
+                <p><a href="mailto:linawriters7@gmail.com"><ion-icon name="mail-outline"></ion-icon> linawriters7@gmail.com</a></p>
+            </div>
+
+            <div class="footer-right">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-wechat"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

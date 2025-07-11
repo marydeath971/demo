@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing - Lina Writers</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ff4c4c;
+      color: #333;
+    }
+
+    /* Fixed Advertisement Banner */
+    .advertisement {
+      background-color: #ff7200;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      position: fixed;
+      top: 50px;  /* Just below the header */
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #333; /* Dark color for header */
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1001;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff4c4c;
+    }
+
+    .menu ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    /* Main Content */
+    .main {
+      padding-top: 180px; /* Space for the fixed navbar and advertisement */
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: auto;
+      background-color: #ff4c4c;
+    }
+
+    .content {
+      max-width: 800px;
+      width: 100%;
+      background-color: #fff;
+      color: #333;
+      padding: 10px;
+      margin: auto;
+      text-align: left;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-heading {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    /* Pricing Table */
+    .pricing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .pricing-table th, .pricing-table td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    .pricing-table th {
+      background-color: #ff7200;
+      color: white;
+    }
+
+    /* Offers Section */
+    .offer-section {
+      background-color: #ff7200;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .offer-section h3 {
+      margin-bottom: 10px;
+    }
+
+    /* Transition Button */
+    .transition-btn {
+      background-color: black;
+      color: #ff7200;
+      padding: 12px 30px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      border: 2px solid #ff7200;
+      display: inline-block;
+      width: auto;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .transition-btn:hover {
+      background-color: #ff7200;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .transition-btn.left {
+      float: left;
+    }
+
+    .transition-btn.right {
+      float: right;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333; /* Dark color for footer */
+      color: white;
+      padding: 20px 0;
+      margin-top: 60px;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-right a {
+      margin-left: 10px;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #333; /* Dark color for header */
+      padding: 10px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar .menu ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar .menu ul li a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff4c4c;
+    }
+
+    /* Adjusting for Mobile */
+    @media (max-width: 768px) {
+      .pricing-table {
+        width: 90%;
+      }
+
+      .menu ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fixed Advertisement Banner -->
+  <div class="advertisement">
+    🎉 Grab 10% OFF on your first order! Use code FIRST10 🎉
+  </div>
+
+  <!-- Navigation -->
+  <div class="navbar">
+    <div class="logo">LW</div>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="pricing.html">PRICE</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Pricing Section -->
+  <div class="main">
+    <div class="content">
+      <h2 class="section-heading">Pricing for Our Services</h2>
+
+      <!-- Pricing Table -->
+      <table class="pricing-table">
+        <thead>
+          <tr>
+            <th>Service Type</th>
+            <th>Price per Page</th>
+            <th>Additional Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Essay Writing</td>
+            <td>$15 or 110 rmb</td>
+            <td>Per page, excluding data analysis fees</td>
+          </tr>
+          <tr>
+            <td>Dissertation & Research Paper</td>
+            <td>$10 or 75 rmb</td>
+            <td>Per page, excluding data analysis fees</td>
+          </tr>
+          <tr>
+            <td>Online Courses & Exams</td>
+            <td>Price TBD</td>
+            <td>Price based on the nature and complexity of the work</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Offers Section -->
+      <div class="offer-section">
+        <h3>Exclusive Offers and Discounts</h3>
+        <p>We value our loyal clients! Take advantage of the following discounts:</p>
+        <ul>
+          <li><strong>First Order Discount:</strong> Get 10% off your first order!</li>
+          <li><strong>Referral Bonus:</strong> Refer a friend and get 15% off your next order!</li>
+          <li><strong>Multiple Order Discount:</strong> Order more than one service and get a discount tailored to the size of your order!</li>
+        </ul>
+        <p>For more details, please reach out to our customer support team.</p>
+      </div>
+
+      <!-- Transition Buttons -->
+      <div class="clearfix">
+        <button class="transition-btn left"><a href="contact.html">Contact Us for a Quote</a></button>
+        <button class="transition-btn right"><a href="testimonials.html">What Other Students Say</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>LINA WRITERS © 2025</p>
+      </div>
+      <div class="footer-center">
+        <p><a href="mailto:linawriters7@gmail.com"><ion-icon name="mail-outline"></ion-icon> linawriters7@gmail.com</a></p>
+      </div>
+      <div class="footer-right">
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-wechat"></ion-icon></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

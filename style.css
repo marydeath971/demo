@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ff4c4c;
+    color: white;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url('1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.advertisement {
+    background-color: #ff7200;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    animation: blink 1s infinite;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 1), 0 0 20px rgba(255, 255, 0, 0.5);
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 5%;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff7200;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.feature-box ion-icon {
+    font-size: 40px;
+    color: #ff7200;
+}
+
+.feature-box h3 {
+    color: black;  /* Changed to black for better visibility */
+}
+
+.feature-box p {
+    color: red; /* Changed to red for better visibility */
+}
+
+.transition-btn {
+    width: 220px;
+    height: 50px;
+    background: #ff7200;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition: 0.3s;
+}
+
+.transition-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.transition-btn:hover {
+    background-color: #fff;
+    color: #ff7200;
+}
+
+footer {
+    width: 100%;
+    background: #222;
+    padding: 30px 0;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    width: 30%;
+}
+
+.footer-left p,
+.footer-center p {
+    font-size: 16px;
+}
+
+.footer-left p a,
+.footer-center p a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.footer-left p a:hover,
+.footer-center p a:hover {
+    color: #ff7200;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 15px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff7200;
+}
+
+footer .footer-right a:nth-child(5) {
+    font-size: 32px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: #ff7200;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .menu ul {
+        display: block;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

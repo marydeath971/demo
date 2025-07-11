@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lina Writers - Your Academic Success Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: red; /* Set background color to red */
+            color: white; /* Text color for contrast */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar, footer {
+            background-color: #000000; /* Black background for the header and footer */
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .main {
+            padding-top: 180px; /* Add padding to avoid content being hidden under the fixed navbar and advert */
+        }
+
+        .advertisement-container {
+            width: 100%;
+            background-color: #ff7200; /* Orange-red for visibility */
+            color: white;
+            padding: 60px 20px;
+            overflow: hidden;
+            position: fixed;
+            top: 60px;
+            z-index: 999;
+        }
+
+        .advertisement {
+            position: absolute;
+            white-space: nowrap;
+            animation: scroll-right 40s linear infinite;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        @keyframes scroll-right {
+            0% {
+                left: 100%;
+            }
+            100% {
+                left: -100%;
+            }
+        }
+
+        .content {
+            color: white;
+            text-align: center;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .feature-box {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+        }
+
+        .feature-box ion-icon {
+            font-size: 40px;
+        }
+
+        .transition-btn {
+            background-color: #ff7200;
+            color: white;
+            padding: 40px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 30px;
+            height: 3em;
+        }
+
+        .transition-btn:hover {
+            background-color: white;
+            color: #ff7200;
+            border: 2px solid #ff7200;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #000000;
+            padding: 30px 0;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .footer-left, .footer-center, .footer-right {
+            width: 30%;
+        }
+
+        .footer-center a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-center a:hover {
+            color: #ff7200;
+        }
+
+        .footer-right a {
+            margin-left: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-right a:hover {
+            color: #ff7200;
+        }
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .feature-box {
+                width: 80%;
+            }
+
+            .transition-btn {
+                width: 80%;
+                padding: 30px 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="advertisement-container">
+            <div class="advertisement">
+                🎉 New Student Offer: 10% OFF on your first order! Use code: FIRST10. Don’t miss out on this great opportunity to boost your academic success with Lina Writers! 🎉
+            </div>
+        </div>
+
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Lina Writers</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>Welcome to Lina Writers</h1>
+            <p class="par">Professional Writing Services to Help You Achieve Academic Excellence</p>
+
+            <div class="features">
+                <div class="feature-box">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                    <h3>100% Original Work</h3>
+                    <p>No AI-generated content. We ensure originality and authenticity in every paper.</p>
+                </div>
+                <div class="feature-box">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    <h3>Confidentiality Guaranteed</h3>
+                    <p>Your personal and academic details remain private with us.</p>
+                </div>
+                <div class="feature-box">
+                    <ion-icon name="alarm-outline"></ion-icon>
+                    <h3>On-Time Delivery</h3>
+                    <p>We respect deadlines and guarantee timely submission of your work.</p>
+                </div>
+            </div>
+
+            <button class="transition-btn"><a href="services.html">Explore Our Services</a></button>
+        </div>
+    </div>
+
+    <footer>
+    <div class="footer-content">
+        <div class="footer-left">
+            <p>Lina Writers © 2025</p>
+        </div>
+
+        <div class="footer-center">
+            <p>Email Us on: <a href="mailto:linawriters7@gmail.com"><ion-icon name="mail-outline"></ion-icon> linawriters7@gmail.com</a></p>
+        </div>
+
+        <div class="footer-right">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-wechat"></ion-icon></a>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Lina Writers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom CSS for positioning the advertisement on top of the header */
+        .advertisement {
+            background-color: #ff7200;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 0 10px rgba(255, 255, 0, 1), 0 0 20px rgba(255, 255, 0, 0.5);
+            animation: blink 1s infinite;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* Original Header Section */
+        .navbar {
+            width: 100%;
+            height: 100px;
+            background-color: #333;
+            margin: 0;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            z-index: 1; /* Ensure navbar stays on top of the advertisement */
+        }
+
+        .icon {
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+
+        .logo {
+            color: #ff7200;
+            font-size: 35px;
+            font-family: Arial;
+            padding-left: 20px;
+            float: left;
+            padding-top: 10px;
+            margin-top: 5px;
+        }
+
+        .menu {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 5%;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+        }
+
+        ul li a:hover {
+            color: #ff7200;
+        }
+
+        /* Body Content (Main Section) */
+        .main {
+            padding-top: 50px; /* Adjusted to create space for the advertisement */
+            padding-bottom: 20px; /* Added space at the bottom */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            height: auto;
+            background-color: #ff4c4c;
+        }
+
+        .content {
+            max-width: 700px;
+            width: 100%;
+            background-color: #fff;
+            color: #333;
+            padding: 40px;
+            margin: auto;
+            text-align: left;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content h1 {
+            font-family: 'Times New Roman';
+            font-size: 50px;
+            margin-bottom: 5px;
+        }
+
+        .content .par {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .transition-btn {
+            width: 220px;
+            height: 50px;
+            background: #ff7200;
+            border: none;
+            font-size: 18px;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .transition-btn a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .transition-btn:hover {
+            background-color: #fff;
+            color: #ff7200;
+        }
+
+        /* Footer Section */
+        footer {
+            width: 100%;
+            background: #222;
+            padding: 30px 0;
+            color: white;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .footer-left,
+        .footer-center,
+        .footer-right {
+            width: 30%;
+        }
+
+        .footer-left p,
+        .footer-center p {
+            font-size: 16px;
+        }
+
+        .footer-left p a,
+        .footer-center p a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .footer-left p a:hover,
+        .footer-center p a:hover {
+            color: #ff7200;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 15px;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #ff7200;
+        }
+
+        footer .footer-right a:nth-child(5) {
+            font-size: 32px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer a:hover {
+            color: #ff7200;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Advertisement Section -->
+    <div class="advertisement">
+        <p>🎉 Grab 10% OFF on your first order! Use code FIRST10 🎉</p>
+    </div>
+
+    <!-- Original Header (Navigation) -->
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">LW</h2>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="pricing.html">PRICE</a></li>
+                <li><a href="testimonials.html">TESTIMONIALS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Body Content (Main Section) -->
+    <div class="main">
+        <div class="content">
+            <h1>About Us</h1>
+
+            <!-- Floated Image to the Left -->
+            <img src="https://linawriters.wordpress.com/wp-content/uploads/2025/07/lw.jpg" alt="Lina Writers" class="about-image">
+
+            <p class="par">
+                At Lina Writers, we are dedicated to providing high-quality academic writing support to international students. Since 2018, our mission has been to bridge the language barrier and help students excel in their academic journeys through professional writing, editing, and revision services.
+                <br><br>
+                We understand that many students face challenges with English writing, and our services are designed to overcome these obstacles. Whether it’s a simple essay or an extensive research paper, our team works closely with each student, offering tailored solutions that not only meet academic standards but also enhance writing skills.
+            </p>
+
+            <!-- Transitioning Button to Next Page (About Us to Services) -->
+            <button class="transition-btn"><a href="services.html">Check Out Our Services</a></button>
+        </div>
+    </div>
+
+    <!-- Original Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>LINA WRITERS © 2025</p>
+            </div>
+
+            <div class="footer-center">
+                <p><a href="mailto:linawriters7@gmail.com"><ion-icon name="mail-outline"></ion-icon> linawriters7@gmail.com</a></p>
+            </div>
+
+            <div class="footer-right">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-wechat"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
